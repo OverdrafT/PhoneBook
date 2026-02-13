@@ -1,86 +1,61 @@
 body { background-color: #f8f9fc; }
-main { flex: 1 0 auto; }
-footer { background-color: white; border-top: 1px solid #e3e6f0; }
+main { flex: 1 0 auto; padding-top: 20px; }
+footer { background-color: white; border-top: 1px solid #e3e6f0; padding: 20px 0; }
 
-.navbar { 
-    background-color: #4e73df !important; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-}
-
-.card { 
-    border: none; 
-    border-radius: 10px; 
-    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15); 
-}
+.navbar { background-color: #4e73df !important; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.card { border: none; border-radius: 12px; box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15); }
 
 .avatar-circle {
-    width: 40px; height: 40px;
-    color: white; border-radius: 50%;
+    width: 45px; height: 45px; color: white !important; border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    font-weight: bold; text-transform: uppercase;
+    font-weight: bold; font-size: 1rem; text-transform: uppercase;
 }
 
+.bg-musk   { background-color: #1da1f2 !important; }
+.bg-gates  { background-color: #f25022 !important; }
+.bg-bezos  { background-color: #ff9900 !important; }
+.bg-reeves { background-color: #6c757d !important; }
+.bg-zuck   { background-color: #1877f2 !important; }
 
 @media (min-width: 577px) {
     .contact-table { table-layout: fixed; width: 100%; }
-    .contact-table th:nth-child(1) { width: 60px; }
-    .contact-table th:nth-child(2) { width: 25%; }
-    .contact-table th:nth-child(4) { width: 130px; }
+    .contact-table th:nth-child(1), .contact-table td:nth-child(1) { width: 70px; }
+    .contact-table th:nth-child(2), .contact-table td:nth-child(2) { width: 25%; }
 }
 
 @media (max-width: 576px) {
-    .contact-table, 
-    .contact-table thead, 
-    .contact-table tbody, 
-    .contact-table th, 
-    .contact-table td, 
-    .contact-table tr { 
-        display: block !important; 
-        width: 100% !important; 
+    .contact-table, .contact-table tbody, .contact-table tr, .contact-table td {
+        display: block !important;
+        width: 100% !important;
     }
-
+    
     .contact-table thead { display: none !important; }
 
-    .contact-table tr {
+    .contact-table tr:not(.table-secondary) {
         margin-bottom: 20px;
-        border: 1px solid #e3e6f0;
-        border-radius: 10px;
-        background: white;
+        border: 1px solid #e3e6f0 !important;
+        border-radius: 15px;
+        background: white !important;
         padding: 15px;
     }
 
+    .contact-table td { border: none !important; padding: 5px 0 !important; text-align: center !important; }
+
     .contact-table td:nth-child(1) {
-        text-align: center !important;
-    }
-    .contact-table .avatar-circle { margin: 0 auto 10px; }
-
-    .contact-table td:nth-child(2) {
-        text-align: center !important;
-        font-weight: bold;
-        font-size: 1.1rem;
+        display: flex !important;
+        justify-content: center !important;
+        background: transparent !important;
     }
 
-    .contact-table td:nth-child(3) {
-        text-align: center !important;
-        padding: 10px 0 !important;
-    }
-
-    .contact-table td:nth-child(4) {
-        text-align: center !important;
-        border-top: 1px solid #eee;
-        padding-top: 15px !important;
+    .avatar-circle {
+        margin-bottom: 10px;
+        width: 50px !important;
+        height: 50px !important;
     }
 
     .contact-table .btn {
         display: block !important;
         width: 100% !important;
         margin: 5px 0 !important;
-    }
-
-    .contact-table .table-secondary td {
-        text-align: left !important;
-        background: none !important;
-        font-size: 1.2rem;
-        border: none !important;
     }
 }
