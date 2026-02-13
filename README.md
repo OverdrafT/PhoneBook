@@ -1,6 +1,6 @@
-# 📱 Laboratory Work #1: PhoneBook Web Application
+# Laboratory Work #1: PhoneBook Web Application
 
-### 👤 Developer Information
+### Developer Information
 * **Name:** Shcherbatiuk Yevhen
 * **Group:** KV-33
 * **Institution:** Igor Sikorsky Kyiv Polytechnic Institute (KPI)
@@ -8,10 +8,10 @@
 
 ---
 
-## 📝 Project Overview
+## Project Overview
 This project is a static web application for managing a phone directory. It focuses on creating a **responsive user interface** using modern web technologies. The application demonstrates alphabetical contact grouping, user authentication forms, and personal profile management.
 
-### ✨ Key Features:
+### Key Features:
 * **Responsive Design:** Fully adaptive layout that works on desktops, tablets, and smartphones.
 * **Contact Directory:** List of contacts (celebrities) grouped by the first letter of their name with modern **initial-based avatars**.
 * **User Management:** Static forms for user registration and login with validation-ready fields.
@@ -20,7 +20,7 @@ This project is a static web application for managing a phone directory. It focu
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 * **HTML5:** Semantic structure of the web pages.
 * **CSS3:** Custom styles for avatars, layout adjustments, and UI enhancements.
 * **Bootstrap 5.3:** Main framework for grid system, components (cards, tables), and responsiveness.
@@ -28,7 +28,7 @@ This project is a static web application for managing a phone directory. It focu
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 The repository contains the following files:
 * `index.html` — The main dashboard with the contact list.
 * `register.html` — User registration form.
@@ -41,7 +41,7 @@ The repository contains the following files:
 
 ---
 
-## 🔄 Navigation Flow
+## Navigation Flow
 The application follows a logical user journey:
 1. Users start at **Login** or **Register**.
 2. After simulated entry, they land on the **Contacts** (Index) page.
@@ -50,7 +50,7 @@ The application follows a logical user journey:
 
 ---
 
-## 🚀 How to Run
+## How to Run
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
