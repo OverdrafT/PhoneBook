@@ -58,4 +58,4 @@ The application follows a logical user journey:
    Simply open index.html in any modern web browser.
 
 3. **Live Demo:**
-   Alternatively, visit the live demo via GitHub Pages.
+   Alternatively, visit the live demo via [GitHub Pages](https://overdraft.github.io/PhoneBook/index.html).
