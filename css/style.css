@@ -19,47 +19,68 @@ footer { background-color: white; border-top: 1px solid #e3e6f0; }
     display: flex; align-items: center; justify-content: center;
     font-weight: bold; text-transform: uppercase;
 }
-.bg-musk { background-color: #1da1f2; }
-.bg-gates { background-color: #f25022; }
-.bg-bezos { background-color: #ff9900; }
-.bg-reeves { background-color: #6c757d; }
-.bg-zuck { background-color: #1877f2; }
 
 
 @media (min-width: 577px) {
-    table { table-layout: fixed; width: 100%; }
-    th:nth-child(1) { width: 60px; }
-    th:nth-child(2) { width: 25%; }
-    th:nth-child(4) { width: 130px; }
-    td { word-wrap: break-word; }
+    .contact-table { table-layout: fixed; width: 100%; }
+    .contact-table th:nth-child(1) { width: 60px; }
+    .contact-table th:nth-child(2) { width: 25%; }
+    .contact-table th:nth-child(4) { width: 130px; }
 }
 
 @media (max-width: 576px) {
-    .table, thead, tbody, th, td, tr { display: block; width: 100%; }
-    thead { display: none; }
+    .contact-table, 
+    .contact-table thead, 
+    .contact-table tbody, 
+    .contact-table th, 
+    .contact-table td, 
+    .contact-table tr { 
+        display: block !important; 
+        width: 100% !important; 
+    }
 
-    tr {
-        margin-bottom: 15px;
+    .contact-table thead { display: none !important; }
+
+    .contact-table tr {
+        margin-bottom: 20px;
         border: 1px solid #e3e6f0;
         border-radius: 10px;
         background: white;
-        padding: 10px;
+        padding: 15px;
     }
 
-    td { text-align: center; border: none !important; padding: 5px 0; }
-
-    .avatar-circle { margin: 0 auto 10px; }
-
-    .btn {
-        display: block;
-        width: 100%;
-        margin: 5px 0;
+    .contact-table td:nth-child(1) {
+        text-align: center !important;
     }
+    .contact-table .avatar-circle { margin: 0 auto 10px; }
 
-    .table-secondary td {
-        text-align: left;
-        background: none;
+    .contact-table td:nth-child(2) {
+        text-align: center !important;
         font-weight: bold;
-        color: #4e73df;
+        font-size: 1.1rem;
+    }
+
+    .contact-table td:nth-child(3) {
+        text-align: center !important;
+        padding: 10px 0 !important;
+    }
+
+    .contact-table td:nth-child(4) {
+        text-align: center !important;
+        border-top: 1px solid #eee;
+        padding-top: 15px !important;
+    }
+
+    .contact-table .btn {
+        display: block !important;
+        width: 100% !important;
+        margin: 5px 0 !important;
+    }
+
+    .contact-table .table-secondary td {
+        text-align: left !important;
+        background: none !important;
+        font-size: 1.2rem;
+        border: none !important;
     }
 }
